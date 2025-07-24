@@ -1,0 +1,21 @@
+###
+###
+POST http://localhost:8000/signup
+Content-Type: application/json
+
+{
+    "name": "Vitor",
+    "email": "gwtovitorpw@gmail.com",
+    "password":"Gwtovitor1998@"
+}
+
+###
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "email": "gwtovitorpw@gmail.com",
+    "password":"Gwtovitor1998@"
+}
+
+###
