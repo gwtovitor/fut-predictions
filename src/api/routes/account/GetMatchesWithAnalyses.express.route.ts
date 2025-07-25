@@ -45,7 +45,7 @@ export class GetMatchesWithAnalysisRoute implements Route {
 	private present(
 		input: GetMatchesWithAnalysisOutputDTO
 	): GetMatchesWithAnalysisResponseDTO {
-		return {
+		const output = {
 			matches: input.matches.map(({ match, analysis }) => ({
 				date: match.date,
 				homeTeam: {
@@ -60,7 +60,8 @@ export class GetMatchesWithAnalysisRoute implements Route {
 				},
 				analysis: analysis,
 			})),
-		};
+		}
+		return output
 	}
 
 	public static create(
